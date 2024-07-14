@@ -1,1 +1,26 @@
-{"__resolveType":"site/sections/Header.tsx","navigation":{"links":[],"buttons":[]}}
+{
+  "__resolveType": "site/sections/Header.tsx",
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "url": "Home"
+      },
+      {
+        "label": "Wishlist",
+        "url": "Wishlist"
+      },
+      {
+        "label": "About",
+        "url": "A"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Login",
+        "href": "/login",
+        "id": "login"
+      }
+    ]
+  }
+}

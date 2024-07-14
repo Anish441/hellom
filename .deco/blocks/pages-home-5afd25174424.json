@@ -1,42 +1,67 @@
 {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "Header"
-      },
-      {
-        "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p>Click here to tweak this text however you want.</p>",
-        "cta": [],
-        "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
-      },
-      {
-        "__resolveType": "site/sections/Logos.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "placement": "right"
-      },
-      {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Testimonials.tsx",
-        "arrows": true
-      },
-      {
-        "__resolveType": "site/sections/Faq.tsx"
-      },
-      {
-        "__resolveType": "Footer"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "seo": {
-      "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/Hero.tsx",
+      "title": "<p>Click here to tweak this text however you want.</p>",
+      "cta": [],
+      "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
+    },
+    {
+      "__resolveType": "site/sections/Logos.tsx"
+    },
+    {
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "title": "Variety of collection",
+      "description": "The collection encompasses a variety of shoe types such as casual, formal, athletic, and specialty footwear. Each category offers multiple options in terms of design, color, and material to appeal to different customer needs. The collection reflects current fashion trends and timeless classics, ensuring a balance between contemporary styles and enduring designs. Seasonal offerings may also be featured to align with fashion cycles.",
+      "tagline": "Fashion Style",
+      "cta": [
+        {
+          "style": "Ghost",
+          "id": "shop",
+          "href": "/shop",
+          "text": "Shop Now"
+        }
+      ],
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11712/a5350d97-f1a9-4bff-8740-45a104da216c"
+    },
+    {
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "placement": "right",
+      "description": "Emphasis is placed on showcasing shoes crafted from high-quality materials like leather, suede, canvas, and advanced synthetic fabrics. Detailed product descriptions often highlight craftsmanship, durability, and comfort features. The website provides a user-friendly interface with intuitive navigation tools such as filters by size, color, price range, and occasion. High-quality images, detailed product descriptions, and customer reviews enhance the shopping experience.",
+      "title": "Quality and Craftsmanship",
+      "tagline": "Best quality in affordable price",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11712/b763fa16-a9c7-456c-bc2e-880a49418c15",
+      "cta": [
+        {
+          "style": "Ghost",
+          "id": "shop",
+          "text": "Shop Now",
+          "href": "/shop"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/BlogPosts.tsx",
+      "title": "About"
+    },
+    {
+      "__resolveType": "site/sections/Testimonials.tsx",
+      "arrows": true
+    },
+    {
+      "__resolveType": "site/sections/Faq.tsx"
+    },
+    {
+      "__resolveType": "Footer"
     }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   }
+}

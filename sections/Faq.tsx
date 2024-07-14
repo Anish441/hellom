@@ -19,35 +19,35 @@ export interface Props {
 }
 
 export default function BlogPosts({
-  title = "FAQs",
+  title = "Help",
   description =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-  cta = { id: "change-me", href: "/", text: "Change me", outline: true },
+    "See the wide range of collection ",
+  cta = { id: "change-me", href: "/shop", text: "Shop Now!", outline: true },
   questions = [
     {
-      title: "Question #1 text goes here",
+      title: "How can I determine my shoe size when shopping online?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut vestibulum ligula. Nam et tellus sit amet magna convallis interdum. Integer fermentum ligula nec velit hendrerit, quis feugiat odio feugiat. Ut vel nisi auctor, rhoncus felis vitae, tempor metus. Fusce ut lectus et ex consectetur ullamcorper. Nulla facilisi. Proin ullamcorper, odio a consectetur posuere, mauris felis rutrum lectus, et convallis est risus vitae nisi. Suspendisse potenti. Donec ultricies consectetur lorem, eget tempor nisi cursus in. Vivamus at nulla eros. Sed nec malesuada mauris. Curabitur id ex sed neque rutrum tincidunt. Sed sed lectus nec libero eleifend luctus. Aenean convallis feugiat elit, non tincidunt eros vehicula sed. Phasellus pretium urna sit amet risus interdum tempor.",
+        "You can determine your shoe size by measuring your foot length and width using a ruler or measuring tape. Most online retailers provide size guides that you can refer to for accurate sizing.",
     },
     {
-      title: "Question #2 text goes here",
+      title: "What is the best way to clean and maintain my shoes? ",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut vestibulum ligula. Nam et tellus sit amet magna convallis interdum. Integer fermentum ligula nec velit hendrerit, quis feugiat odio feugiat. Ut vel nisi auctor, rhoncus felis vitae, tempor metus. Fusce ut lectus et ex consectetur ullamcorper. Nulla facilisi. Proin ullamcorper, odio a consectetur posuere, mauris felis rutrum lectus, et convallis est risus vitae nisi. Suspendisse potenti. Donec ultricies consectetur lorem, eget tempor nisi cursus in. Vivamus at nulla eros. Sed nec malesuada mauris. Curabitur id ex sed neque rutrum tincidunt. Sed sed lectus nec libero eleifend luctus. Aenean convallis feugiat elit, non tincidunt eros vehicula sed. Phasellus pretium urna sit amet risus interdum tempor.",
+        "To clean your shoes, you can use a gentle brush or cloth with a mild soap and water solution. Allow your shoes to air dry naturally and avoid direct heat sources. Regularly cleaning and conditioning your shoes can help prolong their lifespan.",
     },
     {
-      title: "Question #3 text goes here",
+      title: "How often should I replace my running shoes?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut vestibulum ligula. Nam et tellus sit amet magna convallis interdum. Integer fermentum ligula nec velit hendrerit, quis feugiat odio feugiat. Ut vel nisi auctor, rhoncus felis vitae, tempor metus. Fusce ut lectus et ex consectetur ullamcorper. Nulla facilisi. Proin ullamcorper, odio a consectetur posuere, mauris felis rutrum lectus, et convallis est risus vitae nisi. Suspendisse potenti. Donec ultricies consectetur lorem, eget tempor nisi cursus in. Vivamus at nulla eros. Sed nec malesuada mauris. Curabitur id ex sed neque rutrum tincidunt. Sed sed lectus nec libero eleifend luctus. Aenean convallis feugiat elit, non tincidunt eros vehicula sed. Phasellus pretium urna sit amet risus interdum tempor.",
+        "t is recommended to replace your running shoes every 300-500 miles, depending on factors like your running style, weight, and shoe type. Inspect your shoes regularly for signs of wear and tear to determine when it's time for a new pair",
     },
     {
-      title: "Question #4 text goes here",
+      title: "Best type of shoe for both casual and formal wear?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut vestibulum ligula. Nam et tellus sit amet magna convallis interdum. Integer fermentum ligula nec velit hendrerit, quis feugiat odio feugiat. Ut vel nisi auctor, rhoncus felis vitae, tempor metus. Fusce ut lectus et ex consectetur ullamcorper. Nulla facilisi. Proin ullamcorper, odio a consectetur posuere, mauris felis rutrum lectus, et convallis est risus vitae nisi. Suspendisse potenti. Donec ultricies consectetur lorem, eget tempor nisi cursus in. Vivamus at nulla eros. Sed nec malesuada mauris. Curabitur id ex sed neque rutrum tincidunt. Sed sed lectus nec libero eleifend luctus. Aenean convallis feugiat elit, non tincidunt eros vehicula sed. Phasellus pretium urna sit amet risus interdum tempor.",
+        "Loafers are versatile shoes that can be dressed up or down to suit both formal and casual occasions. They come in various styles, including penny loafers, tassel loafers, and bit loafers, and are typically made of leather or suede. Loafers offer a polished and sophisticated look when paired with dress pants or suits for formal events, while also providing a stylish and relaxed vibe when worn with jeans or chinos for casual outings.",
     },
     {
-      title: "Question #5 text goes here",
+      title: "Are sneakers casual or formal?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut vestibulum ligula. Nam et tellus sit amet magna convallis interdum. Integer fermentum ligula nec velit hendrerit, quis feugiat odio feugiat. Ut vel nisi auctor, rhoncus felis vitae, tempor metus. Fusce ut lectus et ex consectetur ullamcorper. Nulla facilisi. Proin ullamcorper, odio a consectetur posuere, mauris felis rutrum lectus, et convallis est risus vitae nisi. Suspendisse potenti. Donec ultricies consectetur lorem, eget tempor nisi cursus in. Vivamus at nulla eros. Sed nec malesuada mauris. Curabitur id ex sed neque rutrum tincidunt. Sed sed lectus nec libero eleifend luctus. Aenean convallis feugiat elit, non tincidunt eros vehicula sed. Phasellus pretium urna sit amet risus interdum tempor.",
+        "For a simple and casual look, a low-top sneaker is a great choice. Low-top sneakers are the most versatile, easily pairing with everything from jeans and a t-shirt to tapered pants and a blazer. To keep them formal in the office, try a neutral color, such as gray or brown.",
     },
   ],
 }: Props) {

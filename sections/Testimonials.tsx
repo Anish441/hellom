@@ -39,61 +39,61 @@ export interface Props {
 }
 
 const DEFAULT_PROPS = {
-  title: "This is where you'll put your customer testimonials",
+  title: "Reviews from the customer",
   slides: [
     {
       content: {
         description:
-          "Showcase customer feedback that emphasizes your product or service's key features and addresses prospective clients' concerns. Display endorsements from customer groups that mirror your target audience.",
+          "These shoes are a perfect blend of comfort and style. I can wear them all day without any discomfort, and they look great with any outfit.",
         avatar:
           "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e",
         alt: "Avatar",
-        name: "Name Surname",
-        position: "Position, Company name",
+        name: "Bobby",
+        
       },
     },
     {
       content: {
         description:
-          "Showcase customer feedback that emphasizes your product or service's key features and addresses prospective clients' concerns. Display endorsements from customer groups that mirror your target audience.",
+          " I've been wearing these shoes for months, and they still look as good as new. The quality is top-notch, and they have held up well to daily wear and tear",
         avatar:
           "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e",
         alt: "Avatar",
-        name: "Name Surname",
-        position: "Position, Company name",
+        name: "Rakesh",
+        
       },
     },
     {
       content: {
         description:
-          "Showcase customer feedback that emphasizes your product or service's key features and addresses prospective clients' concerns. Display endorsements from customer groups that mirror your target audience.",
+          "These shoes are worth every penny. The quality is exceptional, and they are reasonably priced compared to other brands offering similar styles",
         avatar:
           "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e",
         alt: "Avatar",
-        name: "Name Surname",
-        position: "Position, Company name",
+        name: "Dharan",
+        
       },
     },
     {
       content: {
         description:
-          "Showcase customer feedback that emphasizes your product or service's key features and addresses prospective clients' concerns. Display endorsements from customer groups that mirror your target audience.",
+          "These shoes are easy to clean, which is a big plus for me. A quick wipe with a damp cloth is all it takes to keep them looking pristine. The low maintenance aspect is a huge bonus for busy individuals.",
         avatar:
           "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e",
         alt: "Avatar",
-        name: "Name Surname",
-        position: "Position, Company name",
+        name: "Mahi",
+        
       },
     },
     {
       content: {
         description:
-          "Showcase customer feedback that emphasizes your product or service's key features and addresses prospective clients' concerns. Display endorsements from customer groups that mirror your target audience.",
+          " I love how versatile these shoes are. I can wear them to work, to the gym, or for a casual outing. They provide the right amount of support and flexibility for various activities.",
         avatar:
           "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e",
         alt: "Avatar",
-        name: "Name Surname",
-        position: "Position, Company name",
+        name: "Raja",
+        
       },
     },
   ],

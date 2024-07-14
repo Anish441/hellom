@@ -31,9 +31,9 @@ const DEFAULT_IMAGE =
   "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/772e246e-1959-46ac-a309-3f25ab20af6f";
 
 export default function ImageWithParagraph({
-  title = "Here's an intermediate size heading you can edit",
+  title = "mirdcbzkjt",
   description =
-    "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
+    "text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
   tagline = "Tagline",
   image = DEFAULT_IMAGE,
   placement = "left",
@@ -44,19 +44,19 @@ export default function ImageWithParagraph({
   ],
 }: Props) {
   return (
-    <div class="lg:container md:max-w-6xl lg:mx-auto mx-4 text-sm">
+    <div className="lg:container md:max-w-6xl lg:mx-auto mx-4 text-sm">
       <div
-        class={`flex ${
+        className={`flex ${
           PLACEMENT[placement]
         } gap-12 md:gap-20 text-left items-center z-10 ${
           disableSpacing?.top ? "" : "pt-12 lg:pt-28"
         } ${disableSpacing?.bottom ? "" : "pb-12 lg:pb-28"}`}
       >
-        <div class="w-full md:w-1/2 border border-secondary rounded-lg overflow-hidden">
+        <div id="image-container" className="w-full md:w-1/2 border border-secondary rounded-lg overflow-hidden">
           <Image
             width={640}
             height={640}
-            class="object-fit z-10"
+            className="object-fit z-10"
             sizes="(max-width: 640px) 100vw, 30vw"
             src={image}
             alt={image}
@@ -64,30 +64,30 @@ export default function ImageWithParagraph({
             loading="lazy"
           />
         </div>
-        <div class="w-full md:w-1/2 space-y-2 md:space-y-4 md:max-w-xl gap-4 z-10">
-          <p class="text-sm font-semibold">
+        <div id="text-container" className="w-full md:w-1/2 space-y-2 md:space-y-4 md:max-w-xl gap-4 z-10">
+          <p className="text-sm font-semibold">
             {tagline}
           </p>
-          <p class="text-4xl leading-snug">
+          <p className="text-4xl leading-snug">
             {title}
           </p>
-          <p class="leading-normal">
+          <p className="leading-normal">
             {description}
           </p>
-          <div class="flex gap-3 pt-4">
+          <div className="flex gap-3 pt-4">
             {cta?.map((item) => (
               <a
                 key={item?.id}
                 id={item?.id}
                 href={item?.href}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`font-normal btn btn-primary
-                  ${!item.style || item.style == "Outline" && "btn-outline"}
-                  ${item.style == "Ghost" && "btn-ghost"}
+                className={`font-normal btn btn-primary
+                  ${!item.style || (item.style === "Outline" && "btn-outline")}
+                  ${item.style === "Ghost" && "btn-ghost"}
                 `}
               >
                 {item?.text}
-                {item.style == "Ghost" && (
+                {item.style === "Ghost" && (
                   <svg
                     width="24"
                     height="25"

@@ -5,7 +5,7 @@ export interface Post {
   title: string;
   author: string;
   excerpt: string;
-  image: ImageWidget;
+  src: string;
   date: string;
   readingTime?: string;
   tags: string[];
@@ -17,87 +17,78 @@ export interface Props {
   posts?: Post[];
 }
 
-const DEFAULT_IMAGE =
-  "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9";
-
 export default function BlogPosts({
-  title = "Here's a component for you to showcase your blogposts",
-  description = "This subheading is fully editable, remember?",
+  title = "The advantages of the shoes",
+  description = "Here are some of the most popular",
   posts = [
     {
-      title: "Title of blogpost #1",
-      author: "Name of the author",
+      title: "Sneakers",
+      author: "",
       excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      readingTime: "10 min",
-      tags: ["Tag #1", "Tag #2", "Tag #3"],
+        "Sneakers are athletic shoes primarily designed for sports or other forms of physical exercise.They typically feature rubber soles, cushioned interiors, and lace-up or Velcro closures.Sneakers come in various styles such as running shoes, basketball shoes, and casual everyday wear.They are known for their comfort, support, and versatility, making them a popular choice for people of all ages.",
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpBgXxL4a5_hW6BiHP_dEze9gYc5-FEO04fg&s",
+      date: "",
+      readingTime: "",
+      tags: [],
     },
     {
-      title: "Title of blogpost #2",
-      author: "Name of the author",
+      title: "Crocs",
+      author: "",
       excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      readingTime: "10 min",
-      tags: ["Tag #1", "Tag #2", "Tag #3"],
+        "Crocs are a type of casual footwear known for their distinctive clog design and lightweight, durable material called Croslite.They are characterized by their ventilation ports, comfortable footbed, and slip-on style.Crocs are popular for their comfort and easy maintenance, as they are water-resistant and easy to clean.Crocs come in a wide range of colors and styles, including sandals, flip-flops, and lined clogs for colder weather.",
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNbvL5QDQd3pbf6RFKwqKrzhpkQz3bFtl6GA&s",
+      date: "",
+      readingTime: "",
+      tags: [],
     },
     {
-      title: "Title of blogpost #3",
-      author: "Name of the author",
+      title: "Sandals",
+      author: "",
       excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      readingTime: "10 min",
-      tags: ["Tag #1", "Tag #2", "Tag #3"],
+        "Sandals are open-toed footwear that typically consist of a sole held to the foot with straps or thongs.They are lightweight, breathable, and ideal for warm weather or casual occasions.Sandals come in various designs, including flat sandals, wedge sandals, and heeled sandals.They are versatile and can be paired with different outfits, from beachwear to summer dresses.",
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReoMfDpaKOEHWw5ypDNfRjTNbep-X8mnPEYQ&s",
+      date: "",
+      readingTime: "",
+      tags: [],
     },
   ],
 }: Props) {
   return (
-    <div class="lg:container md:max-w-6xl lg:mx-auto mx-4 text-sm py-12 lg:py-28">
-      <div class="space-y-16">
-        <div class="flex flex-col lg:flex-row gap-4 justify-between">
-          <div class="space-y-6 lg:w-1/2">
-            <h2 class="text-4xl leading-snug">
-              {title}
-            </h2>
-            <p class="text-lg">
-              {description}
-            </p>
+    <div className="lg:container md:max-w-6xl lg:mx-auto mx-4 text-sm py-12 lg:py-28">
+      <div className="space-y-16">
+        <div className="flex flex-col lg:flex-row gap-4 justify-between">
+          <div className="space-y-6 lg:w-1/2">
+            <h2 className="text-4xl leading-snug">{title}</h2>
+            <p className="text-lg">{description}</p>
           </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {posts?.map((post) => (
-            <div class="border border-secondary rounded-lg overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {posts?.map((post, index) => (
+            <div key={index} className="border border-secondary rounded-lg overflow-hidden">
               <Image
+                src={post.src}
                 width={640}
-                class="w-full object-fit z-10"
+                className="w-full object-fit z-10"
                 sizes="(max-width: 640px) 100vw, 30vw"
-                src={post.image}
-                alt={post.image}
                 decoding="async"
                 loading="lazy"
               />
-              <div class="p-6 space-y-4">
-                <div class="font-semibold">{post.readingTime}</div>
-                <div class="space-y-2">
-                  <h3 class="text-2xl">{post.title}</h3>
-                  <p class="text-base">{post.excerpt}</p>
+              <div className="p-6 space-y-4">
+                {post.readingTime && <div className="font-semibold">{post.readingTime}</div>}
+                <div className="space-y-2">
+                  <h3 className="text-2xl">{post.title}</h3>
+                  <p className="text-base">{post.excerpt}</p>
                 </div>
-                <div class="flex flex-wrap gap-2">
-                  {post.tags?.map((tag) => (
-                    <div class="badge badge-lg badge-primary text-xs">
+                <div className="flex flex-wrap gap-2">
+                  {post.tags?.map((tag, tagIndex) => (
+                    <div key={tagIndex} className="badge badge-lg badge-primary text-xs">
                       {tag}
                     </div>
                   ))}
                 </div>
-                <div class="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2">
                   <span>{post.date}</span>
-                  <span>•</span>
-                  <span>{post.author}</span>
+                  {post.author && <span>{post.author} •</span>}
                 </div>
               </div>
             </div>

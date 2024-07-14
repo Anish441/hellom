@@ -14,12 +14,12 @@ export interface Props {
 
 const IMG_PLACEHODLER = Array(30).fill(0).map(() => ({
   src:
-    "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/03fbcc78-ca86-4616-a59a-b8aa18331a9c",
+    "https://i.pinimg.com/736x/dc/53/50/dc5350243970437d9fff2c8db3a9975b.jpg",
   altText: "Logo",
 }));
 
 export default function Logos({
-  title = "Edit this heading however you want",
+  title = "Welcome! Have a good time shopping",
   logos = IMG_PLACEHODLER,
 }: Props) {
   const slideContent = (

@@ -1,1 +1,37 @@
-{"__resolveType":"site/sections/Footer.tsx","links":[],"bottomLinks":[],"social":[],"subscribe":{}}
+{
+  "__resolveType": "site/sections/Footer.tsx",
+  "links": [],
+  "bottomLinks": [
+    {
+      "href": "/company",
+      "label": "Contact"
+    },
+    {
+      "href": "/company",
+      "label": "About"
+    },
+    {
+      "label": "Help",
+      "href": "/help"
+    }
+  ],
+  "social": [
+    {
+      "network": "Facebook",
+      "href": "/facebook"
+    },
+    {
+      "network": "Instagram",
+      "href": "/instagram"
+    },
+    {
+      "network": "X - Twitter",
+      "href": "/twitter"
+    }
+  ],
+  "subscribe": {
+    "title": "Contact",
+    "description": "Enter your email ",
+    "instructions": "<p>must be valid</p>"
+  }
+}

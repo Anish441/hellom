@@ -290,8 +290,8 @@ export function Preview(props: Props) {
           @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;700&display=swap');
 
           :root {
-            --admin-color-dark-bg: #0d1717;
-            --admin-color-light-bg: #ffffff;
+            --admin-color-dark-bg: #ffa500;
+            --admin-color-light-bg: #ffa500 ;
             --admin-text-color-dark: #e4e7e7;
             --admin-text-color-light: #162222;
             --admin-border-color-light: #c9cfcf;

@@ -21,19 +21,22 @@ export interface Nav {
     }[];
     buttons: CTA[];
   };
+  search?: {
+    placeholder?: string;
+  };
 }
 
 export default function Header({
   logo = {
     src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
+      "https://i.pinimg.com/736x/dc/53/50/dc5350243970437d9fff2c8db3a9975b.jpg",
     alt: "Logo",
   },
   navigation = {
     links: [
       { label: "Home", url: "/" },
       { label: "About us", url: "/" },
-      { label: "Princing", url: "/" },
+      { label: "Pricing", url: "/" },
       { label: "Contact", url: "/" },
     ],
     buttons: [
@@ -41,7 +44,16 @@ export default function Header({
       { id: "change-me-2", href: "/", text: "Change me", outline: true },
     ],
   },
+  search = {
+    placeholder: "Search",
+  }
 }: Nav) {
+
+  const handleSubmit = (event: { preventDefault: () => void; }) => {
+    event.preventDefault();
+    // Handle search form submission
+  };
+
   return (
     <nav class="drawer drawer-end">
       <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
@@ -81,6 +93,16 @@ export default function Header({
               </a>
             ))}
           </ul>
+          <form onSubmit={handleSubmit} class="flex items-center">
+            <input
+              type="search"
+              placeholder={search.placeholder}
+              class="input input-bordered w-full max-w-xs"
+            />
+            <button class="btn btn-square btn-primary">
+              <Icon id="Search" size={24} strokeWidth={0.1} />
+            </button>
+          </form>
         </div>
 
         <label
